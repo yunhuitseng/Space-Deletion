@@ -1,0 +1,21 @@
+#include <iostream>
+using std::cin;
+using std::cout;
+using std::endl;
+
+int main()
+{
+	int len;
+	const int MAX_LEN = 20;
+	char s[MAX_LEN];
+	char* p;
+	while (cin.getline(s, MAX_LEN))
+	{
+		for (p = s; *p != '\0'; p++) 
+		{
+			if (*p != ' ')
+				cout << *p;		
+		}
+	}
+	return 0;
+}
